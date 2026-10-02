@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Desert Valley Asphalt icon">
+  <defs>
+    <linearGradient id="dva-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- badge background -->
+  <rect x="0" y="0" width="200" height="200" rx="26" fill="url(#dva-bg)"/>
+
+  <!-- desert valley silhouette — stroke-only linework, not a filled shape -->
+  <path d="M18 146 L62 70 L100 118 L138 56 L182 146" fill="none" stroke="#c9a35e" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- road stripe climbing through the gap in the peaks -->
+  <line x1="100" y1="140" x2="100" y2="119" stroke="#c9a35e" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="107" x2="100" y2="97" stroke="#c9a35e" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- horizon line -->
+  <rect x="34" y="150" width="132" height="2" fill="#c9a35e" opacity="0.85"/>
+</svg>

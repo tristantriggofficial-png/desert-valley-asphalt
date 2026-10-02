@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="640" height="160" role="img" aria-label="Desert Valley Asphalt logo">
+  <defs>
+    <linearGradient id="dva-bg-h" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- icon badge — stroke-only valley linework, brass on near-black -->
+  <rect x="0" y="0" width="160" height="160" rx="22" fill="url(#dva-bg-h)"/>
+  <path d="M15 117 L50 56 L80 94 L110 45 L146 117" fill="none" stroke="#c9a35e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="80" y1="112" x2="80" y2="95" stroke="#c9a35e" stroke-width="5" stroke-linecap="round"/>
+  <line x1="80" y1="84" x2="80" y2="76" stroke="#c9a35e" stroke-width="5" stroke-linecap="round"/>
+  <rect x="26" y="120" width="107" height="1.75" fill="#c9a35e" opacity="0.85"/>
+
+  <!-- wordmark — Fraunces serif, ivory + brass italic, for the dark header/footer shell -->
+  <text x="184" y="76" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-weight="600"
+        font-size="44" letter-spacing="0.2" fill="#f3ede2">DESERT VALLEY</text>
+  <text x="184" y="123" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-weight="600" font-style="italic"
+        font-size="44" letter-spacing="0.5" fill="#c9a35e">Asphalt</text>
+  <rect x="186" y="133" width="180" height="1.5" fill="#c9a35e" opacity="0.6"/>
+</svg>

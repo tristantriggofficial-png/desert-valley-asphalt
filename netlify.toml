@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+
+# Netlify Forms: both forms below are detected automatically from the
+# data-netlify="true" attribute in contact.html and every quick-quote form.
+# No extra config needed beyond deploying this folder as-is.
