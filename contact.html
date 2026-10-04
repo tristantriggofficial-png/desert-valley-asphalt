@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFF9EE">
 <title>Contact Us | Get a Free Proposal | Desert Valley Asphalt</title>
 <meta name="description" content="Contact Desert Valley Asphalt for a free, written, no-obligation estimate on paving, sealcoating, striping, or repair anywhere in the Coachella Valley.">
 <link rel="canonical" href="https://www.desertvalleyasphalt.com/contact.html">
@@ -12,7 +13,8 @@
 <meta property="og:url" content="https://www.desertvalleyasphalt.com/contact.html">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -37,16 +39,6 @@
 </head>
 <body>
   <header class="site-header">
-  <div class="topbar">
-    <div class="container">
-      <div class="trust-mini">
-        <span>[X] years serving the Coachella Valley</span>
-        <span>[XX Google reviews, X.X★ average]</span>
-        <span>Licensed &amp; Insured — [CA CONTRACTOR LICENSE #]</span>
-      </div>
-      <div><a href="tel:[PHONE]">Call [PHONE]</a></div>
-    </div>
-  </div>
   <div class="header-main">
     <div class="container">
       <a class="logo-link" href="index.html">
@@ -90,7 +82,7 @@
         </div>
       </nav>
       <div class="header-cta">
-        <a class="btn btn-call btn-sm" href="tel:[PHONE]">📞 [PHONE]</a>
+        <a class="btn btn-call btn-sm" href="tel:[PHONE]"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> [PHONE]</a>
         <a class="btn btn-quote btn-sm" href="contact.html">Get a Free Quote</a>
       </div>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
@@ -99,10 +91,9 @@
   </header>
   <div class="trust-strip">
     <div class="container">
-      <span class="flag">★</span><span>[XX Google reviews, X.X★ average]</span>
-      <span>[X] years in business</span>
-      <span>Licensed &amp; Insured — [CA CONTRACTOR LICENSE #]</span>
-      <span>Free, written, no-obligation estimates</span>
+      <span class="trust-item">5 years in business</span>
+      <span class="trust-item">Free written estimates</span>
+      <span class="trust-item">Same-day callbacks</span>
     </div>
   </div>
 <main>
@@ -111,72 +102,103 @@
     <div class="hero-stripe"></div>
     <div class="container">
       <span class="eyebrow">Contact Us</span>
-      <h1>Get a Free, Written Proposal</h1>
+      <h1>Get a <span class="mark">Free, Written Proposal</span></h1>
       <p class="lede">Call us now, send the quick form below, or fill out the full project form if
       you'd rather give us the details up front. Either way, every estimate is free, written, and
       comes with no obligation.</p>
       <div class="hero-ctas">
-        <a class="btn btn-call" href="tel:[PHONE]">📞 Call [PHONE]</a>
-        <a class="btn btn-outline" href="mailto:[EMAIL]">✉️ Email [EMAIL]</a>
+        <a class="btn btn-call" href="tel:[PHONE]"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> Call [PHONE]</a>
+        <a class="btn btn-outline" href="mailto:[EMAIL]"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> Email [EMAIL]</a>
       </div>
     </div>
   </section>
 
   <section>
     <div class="container split">
-      <div id="quote">
-        <h2>Request a Free Proposal</h2>
-        <form name="full-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <div id="quote" class="form-card">
+        <div class="form-card-head">
+          <span class="eyebrow">Free written proposal</span>
+          <h2>Tell us about your project</h2>
+          <p class="sub">Takes about a minute. We'll call or text you back, usually the same day. No pressure, no obligation.</p>
+        </div>
+        <form name="full-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="full-form">
           <input type="hidden" name="form-name" value="full-quote">
-          <p class="hp"><label>Don't fill this out: <input name="bot-field"></label></p>
-          <label for="c-name">Name</label>
-          <input id="c-name" name="name" type="text" required>
-          <label for="c-phone">Phone</label>
-          <input id="c-phone" name="phone" type="tel" required>
-          <label for="c-email">Email</label>
-          <input id="c-email" name="email" type="email">
-          <label for="c-city">City</label>
-          <select id="c-city" name="city">
-          <option value="Palm Desert">Palm Desert</option>
-          <option value="La Quinta">La Quinta</option>
-          <option value="Indio">Indio</option>
-          <option value="Coachella">Coachella</option>
-          <option value="Cathedral City">Cathedral City</option>
-          <option value="Rancho Mirage">Rancho Mirage</option>
-          <option value="Palm Springs">Palm Springs</option>
-          <option value="Desert Hot Springs">Desert Hot Springs</option>
-          <option value="Bermuda Dunes">Bermuda Dunes</option>
-          <option value="Thousand Palms">Thousand Palms</option>
-            <option value="Other">Other / Not Listed</option>
-          </select>
-          <label for="c-service">Service Needed</label>
-          <select id="c-service" name="service">
-          <option value="Asphalt Repair & Maintenance">Asphalt Repair & Maintenance</option>
-          <option value="Striping">Striping</option>
-          <option value="Sealcoating">Sealcoating</option>
-          <option value="Resurfacing / Overlay">Resurfacing / Overlay</option>
-          <option value="Crack Filling">Crack Filling</option>
-          <option value="Parking Lot Paving">Parking Lot Paving</option>
-            <option value="Not Sure">Not Sure Yet</option>
-          </select>
-          <label for="c-type">Customer Type</label>
-          <select id="c-type" name="customer_type">
-            <option value="Residential">Residential</option>
-            <option value="Commercial">Commercial</option>
-            <option value="HOA">HOA / Property Manager</option>
-          </select>
-          <label for="c-details">Project Details</label>
-          <textarea id="c-details" name="details" rows="4" placeholder="Tell us about the job — size, location, timeline"></textarea>
-          <button class="btn btn-quote btn-block" type="submit" style="margin-top:16px;">Submit for a Free Written Estimate</button>
+          <p class="hp" aria-hidden="true"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+          <fieldset class="form-step">
+            <legend><span class="step-num">1</span> How do we reach you?</legend>
+            <div class="form-grid">
+              <div class="field"><label for="c-name">Your name</label>
+                <input id="c-name" name="name" type="text" required autocomplete="name" placeholder="First and last name"></div>
+              <div class="field"><label for="c-phone">Phone</label>
+                <input id="c-phone" name="phone" type="tel" required autocomplete="tel" placeholder="(760) 000-0000"></div>
+              <div class="field field-wide"><label for="c-email">Email <span class="opt">(optional)</span></label>
+                <input id="c-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step">
+            <legend><span class="step-num">2</span> What kind of property?</legend>
+            <div class="chip-group" role="radiogroup">
+              <label class="chip"><input type="radio" name="customer_type" value="Residential" checked><span>Home</span></label>
+              <label class="chip"><input type="radio" name="customer_type" value="Commercial"><span>Business</span></label>
+              <label class="chip"><input type="radio" name="customer_type" value="HOA"><span>HOA / Property Manager</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step">
+            <legend><span class="step-num">3</span> What do you need done?</legend>
+            <div class="form-grid">
+              <div class="field"><label for="c-city">City</label>
+                <select id="c-city" name="city">
+              <option value="Palm Desert">Palm Desert</option>
+              <option value="La Quinta">La Quinta</option>
+              <option value="Indio">Indio</option>
+              <option value="Coachella">Coachella</option>
+              <option value="Cathedral City">Cathedral City</option>
+              <option value="Rancho Mirage">Rancho Mirage</option>
+              <option value="Palm Springs">Palm Springs</option>
+              <option value="Desert Hot Springs">Desert Hot Springs</option>
+              <option value="Bermuda Dunes">Bermuda Dunes</option>
+              <option value="Thousand Palms">Thousand Palms</option>
+              <option value="Other">Other / Not Listed</option>
+                </select></div>
+              <div class="field"><label for="c-service">Service</label>
+                <select id="c-service" name="service">
+              <option value="Asphalt Repair & Maintenance">Asphalt Repair & Maintenance</option>
+              <option value="Striping">Striping</option>
+              <option value="Sealcoating">Sealcoating</option>
+              <option value="Resurfacing / Overlay">Resurfacing / Overlay</option>
+              <option value="Crack Filling">Crack Filling</option>
+              <option value="Parking Lot Paving">Parking Lot Paving</option>
+              <option value="Not Sure">Not Sure Yet</option>
+                </select></div>
+              <div class="field field-wide"><label for="c-details">Project details <span class="opt">(optional)</span></label>
+                <textarea id="c-details" name="details" rows="4" placeholder="Size, location, timeline, anything that helps us quote it right"></textarea></div>
+            </div>
+          </fieldset>
+
+          <button class="btn btn-quote btn-block form-submit" type="submit">Send My Free Proposal Request <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-reassure"><span>Free estimates</span><span>Written quote</span><span>Same-day callback</span></p>
         </form>
       </div>
       <div>
         <div class="quick-form" id="quick">
+          <div class="spin-badge" aria-hidden="true">
+            <svg viewBox="0 0 120 120" focusable="false">
+              <defs><path id="spin-path" d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0"/></defs>
+              <circle cx="60" cy="60" r="58" fill="#FFC233"/>
+              <circle cx="60" cy="60" r="31" fill="#FFFFFF"/>
+              <g class="spin-ring"><text><textPath href="#spin-path" xlink:href="#spin-path" textLength="276" lengthAdjust="spacing">FREE ESTIMATES &#8226; COACHELLA VALLEY &#8226; </textPath></text></g>
+              <circle cx="60" cy="52" r="9" fill="#FFB81C"/>
+              <path d="M41 78 L53 57 L61 69 L70 53 L80 78 Z" fill="#E8603A" stroke="#14283A" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <h3>Get a Free, Written Estimate</h3>
           <p class="sub">No obligation. We'll call or text you back — usually the same day.</p>
           <form name="quick-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="quick-quote">
-            <p class="hp"><label>Don't fill this out: <input name="bot-field"></label></p>
+            <p class="hp" aria-hidden="true"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
             <label for="qf-name">Name</label>
             <input id="qf-name" name="name" type="text" required placeholder="Your name">
             <label for="qf-phone">Phone</label>
@@ -215,11 +237,10 @@
 
         <div class="card" style="margin-top:20px;">
           <h3>Business Info</h3>
-          <p>📞 <a href="tel:[PHONE]">[PHONE]</a><br>
-          ✉️ <a href="mailto:[EMAIL]">[EMAIL]</a><br>
-          📍 [City, CA]<br>
-          🛠️ Licensed &amp; Insured — [CA CONTRACTOR LICENSE #]<br>
-          🕒 Hours: <span class="placeholder-flag">[add business hours]</span></p>
+          <p><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> <a href="tel:[PHONE]">[PHONE]</a><br>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> <a href="mailto:[EMAIL]">[EMAIL]</a><br>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> [City, CA]<br>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg> Hours: <span class="placeholder-flag">[add business hours]</span></p>
         </div>
       </div>
     </div>
@@ -228,11 +249,10 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <img src="images/logo-reverse.svg" alt="Desert Valley Asphalt logo" style="height:48px;margin-bottom:14px;">
+        <img src="images/logo.svg" alt="Desert Valley Asphalt logo" style="height:48px;margin-bottom:14px;">
         <p class="muted">Desert Valley Asphalt is a locally based asphalt paving, sealcoating, striping, and repair
-        contractor serving the Coachella Valley. [X] years in business, licensed and insured
-        ([CA CONTRACTOR LICENSE #]), with free written estimates on every job.</p>
-        <p class="muted">📞 <a href="tel:[PHONE]">[PHONE]</a> &nbsp;|&nbsp; ✉️ <a href="mailto:[EMAIL]">[EMAIL]</a></p>
+        contractor serving the Coachella Valley. 5 years in business, with free written estimates on every job.</p>
+        <p class="muted"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> <a href="tel:[PHONE]">[PHONE]</a> &nbsp;|&nbsp; <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> <a href="mailto:[EMAIL]">[EMAIL]</a></p>
       </div>
       <div>
         <h4>Services</h4>
@@ -272,12 +292,12 @@
     </div>
     <div class="container footer-bottom">
       <span>© <span id="year"></span> Desert Valley Asphalt. All rights reserved.</span>
-      <span>[City, CA] &nbsp;|&nbsp; [CA CONTRACTOR LICENSE #]</span>
+      <span>[City, CA]</span>
     </div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <div class="sticky-cta">
-    <a class="call" href="tel:[PHONE]">📞 Call [PHONE]</a>
+    <a class="call" href="tel:[PHONE]"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> Call [PHONE]</a>
     <a class="quote" href="/contact.html#quote">Get a Free Quote</a>
   </div>
   <script src="js/main.js"></script>

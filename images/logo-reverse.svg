@@ -1,24 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="640" height="160" role="img" aria-label="Desert Valley Asphalt logo, reversed for dark backgrounds">
-  <defs>
-    <linearGradient id="dva-bg-hr" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#171717"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="640" height="160" role="img" aria-label="Desert Valley Asphalt logo">
+  <!-- v3 "Golden Hour Highway": made for LIGHT backgrounds. Ink + saffron + terracotta. -->
+  <!-- sun rising between the peaks -->
+  <circle cx="80" cy="66" r="30" fill="#FFB81C"/>
+  <!-- two desert peaks: terracotta fill, ink outline -->
+  <path d="M14 122 L50 58 L80 96 L110 46 L146 122 Z" fill="#E8603A" stroke="#14283A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- painted road stripe climbing through the gap -->
+  <line x1="80" y1="118" x2="80" y2="104" stroke="#FFF9EE" stroke-width="5" stroke-linecap="round"/>
+  <line x1="80" y1="96" x2="80" y2="91" stroke="#FFF9EE" stroke-width="5" stroke-linecap="round"/>
+  <!-- horizon line -->
+  <rect x="18" y="128" width="124" height="5" rx="2.5" fill="#14283A"/>
 
-  <!-- Identical treatment to logo-horizontal.svg: the whole site shell
-       (header + footer) is now a dark surface, so there is no longer a
-       separate "light background" lockup — this file is kept as an alias
-       for any template or embed that still references it directly. -->
-  <rect x="0" y="0" width="160" height="160" rx="22" fill="url(#dva-bg-hr)"/>
-  <path d="M15 117 L50 56 L80 94 L110 45 L146 117" fill="none" stroke="#c9a35e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="80" y1="112" x2="80" y2="95" stroke="#c9a35e" stroke-width="5" stroke-linecap="round"/>
-  <line x1="80" y1="84" x2="80" y2="76" stroke="#c9a35e" stroke-width="5" stroke-linecap="round"/>
-  <rect x="26" y="120" width="107" height="1.75" fill="#c9a35e" opacity="0.85"/>
-
-  <text x="184" y="76" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-weight="600"
-        font-size="44" letter-spacing="0.2" fill="#f3ede2">DESERT VALLEY</text>
-  <text x="184" y="123" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-weight="600" font-style="italic"
-        font-size="44" letter-spacing="0.5" fill="#c9a35e">Asphalt</text>
-  <rect x="186" y="133" width="180" height="1.5" fill="#c9a35e" opacity="0.6"/>
+  <!-- wordmark: live SVG text (Fraunces, falls back to Georgia). OUTLINE THE TEXT BEFORE PRINT / SIGNAGE / DECALS. -->
+  <text x="184" y="76" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-weight="700"
+        font-size="44" letter-spacing="0.2" fill="#14283A">DESERT VALLEY</text>
+  <text x="184" y="123" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-weight="700" font-style="italic"
+        font-size="44" letter-spacing="0.5" fill="#C8431D">Asphalt</text>
+  <rect x="186" y="134" width="150" height="5" rx="2.5" fill="#FFB81C"/>
 </svg>

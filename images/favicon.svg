@@ -1,21 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Desert Valley Asphalt icon">
-  <defs>
-    <linearGradient id="dva-bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#171717"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
-    </linearGradient>
-  </defs>
-
-  <!-- badge background -->
-  <rect x="0" y="0" width="200" height="200" rx="26" fill="url(#dva-bg)"/>
-
-  <!-- desert valley silhouette — stroke-only linework, not a filled shape -->
-  <path d="M18 146 L62 70 L100 118 L138 56 L182 146" fill="none" stroke="#c9a35e" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
-
-  <!-- road stripe climbing through the gap in the peaks -->
-  <line x1="100" y1="140" x2="100" y2="119" stroke="#c9a35e" stroke-width="6" stroke-linecap="round"/>
-  <line x1="100" y1="107" x2="100" y2="97" stroke="#c9a35e" stroke-width="6" stroke-linecap="round"/>
-
+  <!-- badge tile: warm cream with an ink keyline, so the mark holds on any light surface and in browser tabs -->
+  <rect x="3" y="3" width="194" height="194" rx="38" fill="#FFF3D6" stroke="#14283A" stroke-width="5"/>
+  <!-- sun rising between the peaks -->
+  <circle cx="100" cy="84" r="38" fill="#FFB81C"/>
+  <!-- two desert peaks: terracotta fill, ink outline -->
+  <path d="M20 152 L64 74 L100 120 L136 62 L180 152 Z" fill="#E8603A" stroke="#14283A" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- painted road stripe climbing through the gap -->
+  <line x1="100" y1="146" x2="100" y2="128" stroke="#FFF9EE" stroke-width="6.5" stroke-linecap="round"/>
+  <line x1="100" y1="118" x2="100" y2="112" stroke="#FFF9EE" stroke-width="6.5" stroke-linecap="round"/>
   <!-- horizon line -->
-  <rect x="34" y="150" width="132" height="2" fill="#c9a35e" opacity="0.85"/>
+  <rect x="30" y="158" width="140" height="6" rx="3" fill="#14283A"/>
 </svg>
