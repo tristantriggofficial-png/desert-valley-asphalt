@@ -149,3 +149,22 @@
     }
   }
 })();
+
+// Send every quote form to GoHighLevel as well as Netlify Forms.
+(function () {
+  var GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/K3zWWHjtYsH1TM1OH4U1/webhook-trigger/8a8dfcfe-a2fb-40f4-87f7-46a9c7702a26';
+  document.addEventListener('submit', function (e) {
+    var form = e.target;
+    if (!form || !form.matches || !form.matches('form[data-netlify]')) return;
+    var bot = form.querySelector('[name="bot-field"]');
+    if (bot && bot.value) return;
+    var body = new URLSearchParams();
+    new FormData(form).forEach(function (value, key) {
+      if (key !== 'bot-field' && typeof value === 'string') body.append(key, value);
+    });
+    body.append('source_page', window.location.href);
+    try {
+      fetch(GHL_WEBHOOK, { method: 'POST', mode: 'no-cors', body: body, keepalive: true });
+    } catch (err) { /* Netlify submission still goes through */ }
+  });
+})();
