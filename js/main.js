@@ -155,7 +155,7 @@
   var GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/K3zWWHjtYsH1TM1OH4U1/webhook-trigger/8a8dfcfe-a2fb-40f4-87f7-46a9c7702a26';
   document.addEventListener('submit', function (e) {
     var form = e.target;
-    if (!form || !form.matches || !form.matches('form[data-netlify]')) return;
+    if (!form || !form.querySelector || form.tagName !== 'FORM' || !form.querySelector('input[name="form-name"]')) return;
     var bot = form.querySelector('[name="bot-field"]');
     if (bot && bot.value) return;
     var body = new URLSearchParams();
